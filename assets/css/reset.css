@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+:root {
+    --fontPadrao: 'Courier New', Courier, monospace;
+    --fontAlternativa: Georgia, 'Times New Roman', Times, serif;
+    --corDeFontPrimaria: #f3f5fc;
+    --corDeFontSegundaria: #0a3871;
+    --corBrancaPadrao: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.corpoDaPagina {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--corDeFontPrimaria);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.paragrafoResultado {
+    width: 100%;
+    height: 40%;
+    font-size: 1.5em;
+    color: var(--corDeFontSegundaria);
+    font-family: var(--fontAlternativa);
+    text-align: center;
+    /* display: none; */
+}
+
+.btnCopiarTexto {
+    width: 90%;
+    height: 7%;
+    border-radius: 24px;
+    font-family: var(--fontPadrao);
+    border: 1px solid var(--corDeFontSegundaria);
+    font-size: 1.2rem;
+    margin-top: 25px;
+    display: none;
+}
+
+.sumeTexto {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .boxImagem {
+        display: none;
+    }
+}

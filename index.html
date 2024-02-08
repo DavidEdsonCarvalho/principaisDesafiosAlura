@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafil Challeng</title>
+    <!-- Mobile Frost -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" media="screen and (max-width: 375px)" href="./assets/css/top.css">
+    <link rel="stylesheet" media="screen and (max-width: 375px)" href="./assets/css/mainContainer.css">
+    <!-- Verção tablete -->
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="./assets/cssVercaoTablet/top.css">
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="./assets/cssVercaoTablet/mainContainer.css">
+    <!-- Verção DestckTop -->
+    <link rel="stylesheet" media="screen and (min-width: 900px) and (max-width: 2020px)" href="./assets/cssDesckTop/top.css">
+    <link rel="stylesheet" media="screen and (min-width: 900px) and (max-width: 2020px)" href="./assets/cssDesckTop/mainContainer.css">
+</head>
+<body class="corpoDaPagina">
+    <header class="cabecalho">
+        <img class="logoAlura" src="imagens/logoAlura.png" alt="logo marca da alura">
+    </header>
+    <main class="containerPrincipal">
+        <div class="containerTexto">
+            <input type="text" name="texto" id="texto" placeholder="Digite seu texto">
+            <p class="paragrafoResultado"></p>
+            <div class="imagemElabel">
+                <img src="imagens/bi_exclamation-circle-fill.png" alt="simbulo de esclamação">
+                <label for="texto">Apenas letras minúsculas e sem acento.</label>
+            </div>
+        </div>
+        <div class="botoes">
+            <button type="button" class="btnCriptografar">Criptografar</button>
+            <button type="button" class="btnDescriptografar" disabled>Descriptografar</button>
+        </div>
+        <div class="caixaDeMenssagem">
+            <figure class="boxImagem">
+                <img src="imagens/imgDescktop.svg" alt="uma imagem de um perssonagem usando uma lupa">
+            </figure>
+            <h1 class="tituloMensagem">Nenhuma mensagem encontrada</h1>
+            <p class="paragrafoMensagem">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <button class="btnCopiarTexto">Copiar</button>
+        </div>
+    </main>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
